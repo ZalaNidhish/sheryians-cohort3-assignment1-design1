@@ -30,7 +30,7 @@ html {
 .pokemon{
     position: absolute;
     top: 50%;
-    left: 65%;
+    left: 12%;
     transform: translate(-50%, -50%);
     height: 100vh;
     width: 100vw;
@@ -137,6 +137,7 @@ nav img:nth-child(2){
   flex-direction: column;
   padding: 4vh;
   gap: 2vh;
+  position: relative;
 }
 
 .right .dot {
