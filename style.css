@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light: rgba(250, 231, 180);
+  --dark: rgba(251, 198, 11);
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 1.5vh;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 4px 4px 16px rgba(201, 201, 201, 0.826);
+}
+
+.pokemon{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width: 100vw;
+}
+
+.pokemon img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.game{
+    position: absolute;
+    bottom: -27%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    height: 30vh;
+    width: 30vw;
+}
+
+.game img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav img {
+  height: 7vh;
+  cursor: pointer;
+}
+
+nav img:nth-child(2){
+  height: 5vh;
+  z-index: 999;
+}
+
+.left {
+  height: 100%;
+  width: 60vw;
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8vh;
+  gap: 2vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left h3{
+    margin-top: 2vh;
+    letter-spacing: 1vh;
+    font-size: 14px;
+}
+
+.left>h1{
+    font-size: 20vh;
+    line-height: 20vh;
+}
+
+.left p{
+    width: 56%;
+    color: rgba(0, 0, 0, 0.731);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.left>div{
+    margin-top: 2vh;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+}
+
+.left>div #hr{
+    width: 3vw;
+    background-color: black;
+    height: 0.1vw;
+}
+
+.left::selection{
+    color: black;
+    background-color: var(--light);
+}
+
+.right {
+  height: 100%;
+  width: 40vw;
+  background-color: var(--light);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4vh;
+  gap: 2vh;
+}
+
+.right .dot {
+  height: 1.5vh;
+  width: 1.5vh;
+  border-radius: 50%;
+  background-color: var(--dark);
+  border: 1px solid transparent;
+  z-index: 999;
+  transition: all 0.2s ease-in;
+}
+
+.right .dot:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.right .active{
+    background-color: black;
+    transform: scale(1.2);
+}
+
