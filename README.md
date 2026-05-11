@@ -1,4 +1,4 @@
-# Sheriyans-Cohort3-Assignment1-Design1
+# Sheryians-Cohort3-Assignment1-Design1
 
 This repository contains my submission for Assignment 2 from Sheriyans Coding School
  Cohort 3.0.
