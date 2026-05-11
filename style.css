@@ -14,7 +14,7 @@ html {
   height: 100%;
   width: 100%;
   background-color: whitesmoke;
-  padding: 1.5vh;
+  /* padding: 1.5vh; */
 }
 
 .main {
@@ -22,7 +22,7 @@ html {
   width: 100%;
   display: flex;
   position: relative;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   overflow: hidden;
   box-shadow: 4px 4px 16px rgba(201, 201, 201, 0.826);
 }
